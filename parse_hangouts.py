@@ -33,7 +33,8 @@ with open('Hangouts.json') as json_file:
                                 'conversation_type': json_conversation['conversation']['type'],
                                 'conversation_name': ''
                            }
-        print(conversation['conversation_id'] + ' ' + conversation['conversation_name'])
+            
+        #print(conversation['conversation_id'] + ' ' + conversation['conversation_name'])
 
         # Adding all conversation info to Conversations dataframe
         conversations = conversations.append(conversation,ignore_index=True)
